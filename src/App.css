@@ -5,13 +5,14 @@
     align-items: center;
 }
 
+
+/* SVGs Layout */
 .Calc-Body{
     background-image: url("./Assets/Body.svg");
     background-position: center;
     background-repeat: no-repeat;
     width: 447px;
     height: 777px;
-
 }
 
 .Calc-Header{
@@ -40,7 +41,17 @@
     left: 5rem;
 }
 
+/* Display Calculation */
 
+.Display{
+    position: relative;
+    bottom: 9rem;
+    left: 8rem;
+    height: .8rem;
+}
+
+
+/* Button Containers */
 .Btn-Pad{
     position: relative;
     top: -4rem;
@@ -49,7 +60,6 @@
     display: flex;
     
 }
-
 .Btn-Pad-Left{
     padding-top: 2rem;
     padding-left: 3rem;
@@ -59,15 +69,16 @@
     grid-template-columns: repeat(3, 1fr);
     
 }
-
 .Btn-Pad-Right{
-    padding-top: 3rem;
+    padding-top: 2rem;
     width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
+
+/* General Button Properties */
 .Btn{
     border-radius: 1.2rem;
     cursor: pointer;
@@ -76,22 +87,61 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
 }
+
+.Btn:active{
+    transform: scale(1.1);
+
+}
+
+/* Button Specifics */
 
 .Calc{
-  
-  
     background: #D3D3D3;
-    border-radius: 1.2rem;
-
 }
 .Ctrl{
-   
- 
     height: 40px;
     background: #303030;
-    border-radius: 1.2rem;
+    color: #ffffff;
 }
 .Operator{
     background: #454562;
+    color: #ffffff;
+}
+
+
+@media Screen and (max-width:450px){
+    .Calc-Body{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .Calc-Header{
+        left: 0rem;
+        width: 90%;
+    }
+    
+    .Calc-Solar{
+        bottom: 7rem;
+        left: 0rem;
+    }
+    
+    .Calc-Key{
+        top: -6rem;
+        left: 0rem;
+    
+    }
+    
+    .Calc-Display{
+        width: 75%;
+        top: -7rem;
+        left: 0rem;
+    }
 }
