@@ -1,17 +1,20 @@
 import React from 'react'
 import DisplaySVG from "../Assets/Display.svg"
-import MyContext from '../HOC/MyContext'
+import StateContext from '../HOC/StateContext'
 
 const Display = () => {
     return (
-        <MyContext.Consumer>
+        <StateContext.Consumer>
             {context => (
         <>
         <img className="Calc-Display" src={DisplaySVG} alt="The display"/>
-        <p className="Display">{context.input}</p>
+        <div className="Display-Container">
+        <p className="Display-Output" >{context.output}</p>
+        <p className="Display-Input" id="display">{context.input}</p>
+        </div>
         </>
         )}
-        </MyContext.Consumer>
+        </StateContext.Consumer>
     )
 }
 

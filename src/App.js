@@ -7,13 +7,13 @@ import SolarPanel from "./components/SolarPanel";
 import ProductKey from "./components/ProductKey";
 import Display from "./components/Display";
 import KeyPad from "./components/KeyPad";
-import MyProvider from "./HOC/MyProvider";
+import StateProvider from "./HOC/StateProvider";
 
 const App = () => {
   
 
   return (
-    <MyProvider>
+    <StateProvider>
     <div className="App">
       <Body>
         <Header />
@@ -23,7 +23,7 @@ const App = () => {
         <KeyPad/>
       </Body>
     </div>
-    </MyProvider>
+    </StateProvider>
   );
 };
 
