@@ -1,6 +1,6 @@
 # Live-Version 
 
-[Click Me](js-calculator-fcc.netlify.app)
+[Click Me](https://js-calculator-fcc.netlify.app)
 
 # Getting Started with Create React App
 
