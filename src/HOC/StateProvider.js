@@ -82,6 +82,7 @@ const StateProvider = (props) => {
     try {
       // eslint-disable-next-line
       setOutput(`${output}=${eval(output)}`);
+      // eslint-disable-next-line
       setInput(eval(output));
       setCalculated(true);
       setDecimalSet(false);
