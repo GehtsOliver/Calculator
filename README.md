@@ -9,7 +9,7 @@ A straightforward calculator, must-have in a developer's portfolio
 ![Calculator](https://res.cloudinary.com/djiqhmzqs/image/upload/v1614408225/Calculator_8d26b0e7fa.jpg "Calculator")
 
 ### Description
-A calculator is something not to be missed out in a developer's portfolio!
+A calculator should not be missing in a developer's portfolio!
 This project was inspired by and used in order to achieve https://www.freecodecamp.org/ 's Front End Development Libraries Certification.
 It's composed of ReactJS, plain and simple.
 
